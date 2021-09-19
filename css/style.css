@@ -1,21 +1,37 @@
 /*************************** public styles ***************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+  font-family: newyork;
+  src: url("fonts/NewYork.otf") format("opentype");
+}
+
 html {
   scroll-behavior: smooth;
- 
+
 
 }
 
+main {
+  overflow: hidden;
+}
+
 :root {
-  --primary-color: #0d6efd;
-  --secondary-color: #f7f7f7;
-  --third-color: #f09204;
-  --fourth-color: #F6F5F5;
-  --fifth-color: #DFE9FE;
+  --primary-color: #003F9A;
+  --secondary-color: #F2F2F2;
+  --third-color: #FE9F00;
+  --fourth-color: #002B6A;
+  --fifth-color: #647EA4;
   --black: #000000;
   --white: #ffffff;
-  --header-font-family: 'Barlow Condensed', sans-serif;
-  --paragraph-font-family: 'Poppins', sans-serif;
-  --arabic-font-family: 'Reem Kufi', sans-serif;
+  --bg-sections: #F9F9F9;
+  --header-font-family: 'newyork';
+  --main-font-family: 'Poppins', sans-serif;
+  --heading-font-size-25: 25px;
+}
+
+* {
+  font-family: var(--main-font-family);
 }
 
 .bg-primary-color {
@@ -58,6 +74,14 @@ html {
   color: var(--fifth-color);
 }
 
+.header-font-family {
+  font-family: var(--header-font-family);
+}
+
+.main-font-family {
+  font-family: var(--main-font-family);
+}
+
 .black {
   color: black;
 }
@@ -66,17 +90,61 @@ html {
   color: white;
 }
 
-i{
+i {
   color: var(--white);
 }
 
-/* .header-font-family {
-    font-family: var(--header-font-family);
-  }
-  
-  .paragraph-font-family {
-    font-family: var(--paragraph-font-family);
-  }
+.h2 {
+  font-size: 46px !important;
+}
+
+.heading-font-size-25 {
+  font-size: var(--heading-font-size-25);
+}
+
+p {
+  font-size: 16px;
+}
+
+.ps-135 {
+  padding-left: 135px;
+}
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.py-100 {
+  padding: 100px 0px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pe-15 {
+  padding-right: 15rem !important;
+}
+
+/* .py-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+} */
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* 
+
+
   
   .arabic-font-family {
     font-family: var(--arabic-font-family);
@@ -183,6 +251,7 @@ i{
     background-color: #117e3d;
   } */
 
+
 /*************************** end of public styles ***************************/
 /*************************** start of navbar with offcanvas form styles ***************************/
 
@@ -224,20 +293,19 @@ i{
 /* ==========================================================================================================
 										banner
 ========================================================================================================== */
-.curved {
+/* .curved {
   position: relative;
-  /* background: #2c3e50; */
   background-position: center ;
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
   border-bottom-left-radius: 50% 14%;
   border-bottom-right-radius: 50% 14%;
-}
+} */
 
 .hero-img {
   width: 100%;
-  min-height: calc(100vh - 90px) !important;
+  min-height: calc(100vh - 104px) !important;
 }
 
 .break-container {
@@ -245,25 +313,81 @@ i{
   position: relative;
   left: calc(-1 * (100vw - 100%) / 2);
 }
+
 /* ==========================================================================================================
-                    banner
+								grades
 ========================================================================================================== */
+.grades {
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+
+}
+
 .grades-img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-repeat: no-repeat !important;
+  /* background-repeat: no-repeat !important; */
   margin: auto;
 }
-.schools{
+
+/* ==========================================================================================================
+							schools
+========================================================================================================== */
+
+.schools {
   width: 100%;
-  height: 100%;
   position: absolute;
-  top: -27px;
+  top: -131px;
 }
-.accordion{
-  margin-top: 20px !important;
+
+/* ==========================================================================================================
+            choose our school
+========================================================================================================== */
+.choose-our-school {
+  background-color: var(--bg-sections);
 }
+
+.choose-our-school .max-w {
+  max-width: 580px;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.choose-our-school .max-h {
+  height: 600px;
+}
+
+.choose-our-school .pb-40 {
+  padding-bottom: 40px;
+}
+
+.choose-our-school .choose-desc {
+  height: auto;
+  right: 0;
+  top: 380px;
+}
+
+.choose-third {
+  max-width: 300px;
+  height: 290px;
+  border: 8px solid #F9F9F9;
+  position: absolute;
+  left: -24%;
+  bottom: -16%;
+  z-index: 9999999;
+}
+
+/* ==========================================================================================================
+            home about
+========================================================================================================== */
+.home-about .home-about-img {
+  max-width: 600px;
+}
+
 /*************************** start of input form styles ***************************/
 @media (min-width:768px) {
   .sign-up .input-form {
@@ -272,3 +396,27 @@ i{
 }
 
 /*************************** end of input form styles ***************************/
+
+.grades .triangle {
+  width: 473px;
+  height: 410px;
+  margin: auto;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* ==========================================================================================================
+						footer
+========================================================================================================== */
+
+.brand-footer {
+  max-width: 150px;
+}
+
+.links-footer li a {
+  color: white;
+}
+
+footer .font-footer-copy {
+  margin-top: 20px;
+  font-size: 12px;
+}
