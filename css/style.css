@@ -293,16 +293,6 @@ ul {
 /* ==========================================================================================================
 										banner
 ========================================================================================================== */
-/* .curved {
-  position: relative;
-  background-position: center ;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vh;
-  border-bottom-left-radius: 50% 14%;
-  border-bottom-right-radius: 50% 14%;
-} */
-
 .hero-img {
   width: 100%;
   min-height: calc(100vh - 104px) !important;
@@ -313,7 +303,6 @@ ul {
   position: relative;
   left: calc(-1 * (100vw - 100%) / 2);
 }
-
 /* ==========================================================================================================
 								grades
 ========================================================================================================== */
@@ -321,19 +310,24 @@ ul {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-
 }
 
-.grades-img {
+.grades .grades-img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  /* background-repeat: no-repeat !important; */
   margin: auto;
 }
+.grades .triangle {
+  width: 473px;
+  height: 410px;
+  margin: auto;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
 
 /* ==========================================================================================================
-							schools
+schools
 ========================================================================================================== */
 
 .schools {
@@ -343,7 +337,7 @@ ul {
 }
 
 /* ==========================================================================================================
-            choose our school
+choose our school
 ========================================================================================================== */
 .choose-our-school {
   background-color: var(--bg-sections);
@@ -382,27 +376,96 @@ ul {
 }
 
 /* ==========================================================================================================
-            home about
+Back-To-School
+========================================================================================================== */
+.Back-To-School {
+  background-color: var(--bg-sections);
+}
+
+.Back-To-School .card {
+  border: none;
+  background-color: unset;
+}
+
+.Back-To-School .card-body {
+  padding: 1rem 0rem;
+}
+
+.owl-stage .cloned .active {
+  background-color: red;
+}
+
+.owl-stage {
+  margin: auto;
+}
+
+.carousel-wrap .owl-nav {
+  text-align: end;
+  margin-right: 90px;
+  height: 0px;
+}
+
+.arrow-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color);
+}
+
+.arrow-circle :hover {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--third-color);
+}
+
+.arrows {
+  color: var(--third-color);
+  font-size: 28px;
+}
+
+.arrows:hover {
+  color: var(--secondary-color);
+}
+
+.owl-dots {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.owl-dots button.owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 3px;
+}
+
+.owl-dots button.owl-dot.active {
+  background-color: var(--third-color);
+}
+
+.owl-dots button.owl-dot:focus {
+  outline: none;
+}
+
+span {
+  font-size: 70px;
+  position: relative;
+  top: -5px;
+}
+
+/* ==========================================================================================================
+home about
 ========================================================================================================== */
 .home-about .home-about-img {
   max-width: 600px;
 }
 
-/*************************** start of input form styles ***************************/
-@media (min-width:768px) {
-  .sign-up .input-form {
-    width: 50%;
-  }
-}
 
-/*************************** end of input form styles ***************************/
-
-.grades .triangle {
-  width: 473px;
-  height: 410px;
-  margin: auto;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
 
 /* ==========================================================================================================
 						footer
