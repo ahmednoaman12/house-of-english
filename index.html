@@ -12,6 +12,9 @@
     <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- wow animate -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Main style -->
     <link rel="stylesheet" href="css/style.css">
     <title>House of english</title>
 </head>
@@ -20,11 +23,15 @@
     <!-- ==========================================================================================================
     start nav bar
     ========================================================================================================== -->
-    <header>
+    <header id="header-nav" class="header">
         <nav class="fixed-top navbar navbar-expand-lg  navbar-dark bg-primary-color py-1 " aria-label="Main navigation">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="images/logo-brand.png" class="img-fluid"
-                        alt="logo-brand"></a>
+                <a class="navbar-brand" href="#">
+                    <img src="images/large-logo.png" class="img-fluid" alt="logo-brand">
+                </a>
+                <a href="#contact" class="nav-link search-toggle d-block d-lg-none" data-selector="#header-nav">
+                    <i class="bi bi-search"></i>
+                </a>
                 <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -60,18 +67,25 @@
                         <li class="nav-item">
                             <a href="https://www.twitter.com/egy" class="nav-link"><i class="bi bi-twitter"></i></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item d-none d-lg-block">
                             <div class="vertical-line mr-2">
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link"><i class="bi bi-search"></i> </a>
+
+                        <li class="nav-item d-none d-lg-block ">
+                            <a href="#contact" class="nav-link search-toggle " data-selector="#header-nav"><i
+                                    class="bi bi-search"></i> </a>
                         </li>
                     </ul>
                 </div>
+                <form action="" class="search-box">
+                    <input type="text" class="text search-input" placeholder="Type here to search..." />
+                </form>
             </div>
         </nav>
     </header>
+
+
 
     <!-- ==========================================================================================================
     end nav bar
@@ -92,7 +106,7 @@
     end Hero
     ========================================================================================================== -->
         <section class="Scholistic-grades  p-5 bg-primary-color">
-            <div class="container ">
+            <div class="container  wow fadeIn" data-wow-delay="0.3s">
                 <p class="text-center text-white">
                     Our Scholistic grades
                 </p>
@@ -105,7 +119,30 @@
         <!-- ==========================================================================================================
     grades
     ========================================================================================================== -->
-        <section class="grades p-5 " style="background-image: url(images/bg-grades.png)" ;>
+        <section class="grades p-5 position-relative ">
+            <!-- <section class="grades p-5 " style="background-image: url(images/bg-grades.png)" ;> -->
+            <div class="bubbles">
+                <div class="bubble"></div>
+                <div class="bubble-2"></div>
+                <div class="bubble"></div>
+                <div class="bubble-2"></div>
+                <div class="bubble"></div>
+                <div class="bubble-2"></div>
+                <div class="bubble"></div>
+                <div class="bubble-2"></div>
+                <div class="bubble"></div>
+                <div class="bubble-2"></div>
+                <div class="bubble"></div>
+                <div class="bubble-2"></div>
+                <div class="bubble"></div>
+                <div class="bubble-2"></div>
+                <div class="bubble"></div>
+                <div class="bubble-2"></div>
+                <div class="bubble"></div>
+                <div class="bubble-2"></div>
+                <div class="bubble"></div>
+                <div class="bubble-2"></div>
+            </div>
             <div class="container ">
                 <div class="position-relative">
                     <div class="schools row center-flex m-auto ">
@@ -135,29 +172,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="row triangles-pt-210 py-100 ">
-                    <div class="col-md-12 position-relative">
-                        <div class="triangle">
-                            <img src="images/tiangle-girl.png" class="img-fluid" alt="">
+                <div class="row triangles-pt-210 py-100  ">
+                    <div class="col-md-12 position-relative ">
+                        <!-- <div class=" triangle wow flipInY" data-wow-duration="1s" data-wow-delay="0.2s" > -->
+                        <div class="move triangle" data-speed="0.01">
+                            <img src="images/tiangle-girl.png" class="img-fluid" alt="tiangle-girl">
                         </div>
-                        <div class=" ">
-                            <!-- <div class="triangle-bg " style="background-image: url(images/triangle-1.png);"> -->
-                            <img src="images/triangle-1.png" class=" triangle-bg img-fluid " alt="">
-                            <img src="images/triangle-2.png" class=" triangle-bg img-fluid" alt="">
+                        <div class="move bg-triangle " data-speed="0.02">
+                            <img src="images/triangle-1.png" data-wow-duration="1s" data-wow-delay="0.2s"
+                                class="wow fadeInLeft triangle-bg img-fluid " alt="">
+                            <img src="images/triangle-2.png" data-wow-duration="1s" data-wow-delay="0.2s"
+                                class="wow fadeInRight triangle-bg img-fluid" alt="">
                         </div>
 
                     </div>
-                    <div class=" col-md-12 text-center mt-5">
+                    <div class=" col-md-12 text-center mt-5 " data-wow-iteration="100">
                         <p class=" third-color">
                             Introduction About House Of English School
                         </p>
                     </div>
-                    <div class=" col-md-12 text-center mt-5">
+                    <div class=" col-md-12 text-center mt-5 wow fadeIn" data-wow-delay="0.3s">
                         <p class="h2 header-font-family fourth-color">
                             Our School Is Not Just A <br> Job Or A Place Of Work.
                         </p>
                     </div>
-                    <div class=" col-md-12 text-center mt-5">
+                    <div class=" col-md-12 text-center mt-5 wow fadeIn" data-wow-delay="0.3s">
                         <p class="fifth-color w-75 paragraph-font-family px-2 m-auto ">
                             The House of English board and staff believe in educating youth who are academically,
                             physically and socially capable of meeting the challenges of a rapidly changing and
@@ -170,7 +209,7 @@
                             Mrs : Khodary’s
                         </p>
                     </div>
-                    <div class=" col-md-12 text-center mt-5">
+                    <div class=" col-md-12 text-center mt-5 wow fadeInLeft">
                         <a href="#" class="read-more third-color mt-3">
                             Read More
                             <i class=" ms-2 bi bi-arrow-right third-color"></i>
@@ -185,10 +224,10 @@
         <section class="home-about py-100 bg-secondary-color text-light">
             <div class="container">
                 <div class="row justify-content-between align-items-center g-5">
-                    <div class="col-md home-about-img">
+                    <div class="col-md home-about-img wow fadeInLeft">
                         <img src="images/home-about.png" class="img-fluid" alt="">
                     </div>
-                    <div class="col-md p-5   ">
+                    <div class="col-md p-5  wow fadeInRight ">
                         <p class=" third-color">
                             Alexandria House Of English
                         </p>
@@ -219,17 +258,17 @@
             </div>
             <div class="container">
                 <div class="row pb-40">
-                    <div class="col-md-12">
+                    <div class="col-md-12 wow fadeIn" data-wow-delay="0.3s">
                         <p class=" third-color">
                             Alexandria House Of English
                         </p>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
                         <p class="h2 primary-color w-75 mb-4 header-font-family ">
                             Why Choose Our School?
                         </p>
                     </div>
-                    <div class="col-md-6 pb-5">
+                    <div class="col-md-6 pb-5 wow fadeIn" data-wow-delay="0.3s">
                         <p class="fifth-color paragraph-font-family w-75 ">
                             We inspire your child to achieve more.
                         </p>
@@ -240,13 +279,13 @@
                     </div>
                 </div>
                 <div class="row gx-0">
-                    <div class="col-md-6 z-index-10 ">
+                    <div class="col-md-6 z-index-10  wow fadeInLeft ">
                         <div class="max-w" style="background-image: url('images/choose-1.png');">
 
                         </div>
                     </div>
-                    <div class="col-md-6 bg-primary-color position-absolute choose-desc">
-                        <div class="max-h">
+                    <div class="col-md-6 bg-primary-color position-absolute choose-desc ">
+                        <div class="max-h  wow fadeInRight ">
                             <p class="h2 header-font-family text-white ps-135 pt-100 w-75 mb-4">
                                 Every Year, <br> We Build New <br> Generations From <br> The Ground Up.
                             </p>
@@ -254,7 +293,7 @@
                                 The House of English board and staff believe in educating youth who are academically,
                                 physically and socially capable of meeting the challenges of a rapidly changing.</p>
                         </div>
-                        <div class="choose-third d-none d-md-block">
+                        <div class="choose-third d-none d-md-block  wow fadeInUp ">
                             <img src="./images/choose-3.png" alt="" class="img-fluid">
                         </div>
                     </div>
@@ -270,25 +309,22 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 wow fadeIn" data-wow-delay="0.3s">
                         <p class=" third-color">
                             Alexandria House Of English
                         </p>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 wow fadeIn  " data-wow-delay=" 0.3s">
                         <p class="h2 primary-color w-75 mb-4 header-font-family ">
                             Stay Up To Date With News And Events
                         </p>
                     </div>
-                    <!-- <div class="col-md-6 pb-5 ">
-                        <div class=" d-flex justify-content-end align-items-center h-100 pb-5">
-                        </div>
-                    </div> -->
                     <div class="col-12 pt-5">
                         <div>
                             <div class="carousel-wrap">
                                 <div class="owl-carousel partners-carousel">
-                                    <div class=" mx-auto card" style="width: 15rem;">
+                                    <div class=" mx-auto card wow fadeInUp " data-wow-delay="0.2s"
+                                        style="width: 15rem;">
                                         <img src="images/News-And-Events-1.png" class="img-fluid card-img-top"
                                             alt="...">
                                         <div class="card-body">
@@ -302,7 +338,8 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="card mx-auto  " style="width: 15rem;">
+                                    <div class="card mx-auto   wow fadeInUp " data-wow-delay="0.3s"
+                                        style="width: 15rem;">
                                         <img src="images/choose-1.png" class="img-fluid card-img-top" alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title primary-color">Denouncing Pleasure</h5>
@@ -315,7 +352,8 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class=" mx-auto card" style="width: 15rem;">
+                                    <div class=" mx-auto card wow fadeInUp " data-wow-delay="0.4s"
+                                        style="width: 15rem;">
                                         <img src="images/News-And-Events-3.png" class="img-fluid card-img-top"
                                             alt="...">
                                         <div class="card-body">
@@ -329,7 +367,8 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class=" mx-auto card" style="width: 15rem;">
+                                    <div class=" mx-auto card wow fadeInUp " data-wow-delay="0.5s"
+                                        style="width: 15rem;">
                                         <img src="images/News-And-Events-1.png" class="img-fluid card-img-top"
                                             alt="...">
                                         <div class="card-body">
@@ -343,7 +382,8 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class=" mx-auto card" style="width: 15rem;">
+                                    <div class=" mx-auto card wow fadeInUp " data-wow-delay="0.6s"
+                                        style="width: 15rem;">
                                         <img src="images/choose-1.png" class="img-fluid card-img-top" alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title primary-color">Denouncing Pleasure</h5>
@@ -356,7 +396,8 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class=" mx-auto card" style="width: 15rem;">
+                                    <div class=" mx-auto card wow fadeInUp " data-wow-delay="0.7s"
+                                        style="width: 15rem;">
                                         <img src="images/News-And-Events-3.png" class="img-fluid card-img-top"
                                             alt="...">
                                         <div class="card-body">
@@ -370,7 +411,8 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class=" mx-auto card" style="width: 15rem;">
+                                    <div class=" mx-auto card wow fadeInUp  " data-wow-delay="0.8s"
+                                        style="width: 15rem;">
                                         <img src="images/News-And-Events-3.png" class="img-fluid card-img-top"
                                             alt="...">
                                         <div class="card-body">
@@ -399,7 +441,7 @@
         <div class="container">
             <div class=" logo-footer">
                 <a href="#">
-                    <img src="images/logo-brand.png" class=" img-fluid brand-footer" alt="brand-footer">
+                    <img src="images/large-logo.png" class=" img-fluid brand-footer" alt="brand-footer">
                 </a>
             </div>
             <div class="row mt-4 ">
@@ -468,6 +510,12 @@
     <script src="js/jquery.min.js"></script>
     <!-- owl -->
     <script src="js/owl.carousel.min.js"></script>
+    <!-- wow animated -->
+    <!-- <script src="js/wow.min.js"></script> -->
+    <script>
+        // new WOW().init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
     <!-- main js -->
     <script src="js/main.js"></script>
 </body>
