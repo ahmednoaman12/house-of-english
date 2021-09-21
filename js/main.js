@@ -12,7 +12,8 @@
       $('.Back-To-School .owl-carousel').owlCarousel({
         loop: true,
         rtl: false,
-        // margin: 110, 
+        margin: 20, 
+        // center: true,
         nav: true,
         navText: [
             // `<img src='${egy_tempurl}/images/owl_right_arrow.svg' >`,`<img src='${egy_tempurl}/images/owl_left_arrow.svg' >`
@@ -26,9 +27,9 @@
                 items: 1
             },
             600: {
-                items: 3
+                items: 2
             },
-            1000: {
+            1200: {
                 items: 4
             }
         }

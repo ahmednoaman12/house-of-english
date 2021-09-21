@@ -17,13 +17,13 @@
 </head>
 
 <body>
-        <!-- ==========================================================================================================
+    <!-- ==========================================================================================================
     start nav bar
     ========================================================================================================== -->
     <header>
-        <nav class="navbar navbar-expand-lg  navbar-dark bg-primary-color py-3 " aria-label="Main navigation">
+        <nav class="fixed-top navbar navbar-expand-lg  navbar-dark bg-primary-color py-1 " aria-label="Main navigation">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="images/Group 1288.png" class="img-fluid"
+                <a class="navbar-brand" href="#"><img src="images/logo-brand.png" class="img-fluid"
                         alt="logo-brand"></a>
                 <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
                     aria-label="Toggle navigation">
@@ -61,8 +61,7 @@
                             <a href="https://www.twitter.com/egy" class="nav-link"><i class="bi bi-twitter"></i></a>
                         </li>
                         <li class="nav-item">
-                            <div style="width: 1px  ; height: 20px; background-color: #FFFFFF; margin-top: 14px;"
-                                class="mr-2">
+                            <div class="vertical-line mr-2">
                             </div>
                         </li>
                         <li class="nav-item">
@@ -74,10 +73,10 @@
         </nav>
     </header>
 
-        <!-- ==========================================================================================================
+    <!-- ==========================================================================================================
     end nav bar
     ========================================================================================================== -->
-        <!-- ==========================================================================================================
+    <!-- ==========================================================================================================
     start main
     ========================================================================================================== -->
     <main>
@@ -109,26 +108,26 @@
         <section class="grades p-5 " style="background-image: url(images/bg-grades.png)" ;>
             <div class="container ">
                 <div class="position-relative">
-                    <div class="schools d-flex justify-content-center align-items-center m-auto ">
-                        <div class="col-md-3">
+                    <div class="schools row center-flex m-auto ">
+                        <div class="col-6 col-md-3">
                             <div class="center-flex">
                                 <img class="grades-img" src="images/school-british.png" alt="school-british">
                             </div>
                             <p class="text-center  heading-font-size-25 mt-2 fourth-color">school british</p>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-md-3">
                             <div class="center-flex">
                                 <img class="grades-img" src="images/School-American.png" alt="School-American">
                             </div>
                             <p class="text-center heading-font-size-25 mt-2 fourth-color">School American</p>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-md-3">
                             <div class="center-flex">
                                 <img class="grades-img" src="images/School-National.png" alt="School-National">
                             </div>
                             <p class="text-center heading-font-size-25 mt-2 fourth-color">School National</p>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-md-3">
                             <div class="center-flex">
                                 <img class="grades-img" src="images/school-Kindergarten.png" alt="school-Kindergarten">
                             </div>
@@ -136,11 +135,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="row py-100 ">
-                    <div class="col-md-12">
+                <div class="row triangles-pt-210 py-100 ">
+                    <div class="col-md-12 position-relative">
                         <div class="triangle">
                             <img src="images/tiangle-girl.png" class="img-fluid" alt="">
                         </div>
+                        <div class=" ">
+                            <!-- <div class="triangle-bg " style="background-image: url(images/triangle-1.png);"> -->
+                            <img src="images/triangle-1.png" class=" triangle-bg img-fluid " alt="">
+                            <img src="images/triangle-2.png" class=" triangle-bg img-fluid" alt="">
+                        </div>
+
                     </div>
                     <div class=" col-md-12 text-center mt-5">
                         <p class=" third-color">
@@ -153,7 +158,7 @@
                         </p>
                     </div>
                     <div class=" col-md-12 text-center mt-5">
-                        <p class="fifth-color w-50 paragraph-font-family px-2 m-auto ">
+                        <p class="fifth-color w-75 paragraph-font-family px-2 m-auto ">
                             The House of English board and staff believe in educating youth who are academically,
                             physically and socially capable of meeting the challenges of a rapidly changing and
                             demanding world, youth who are proud of their cultural heritage and also exposed to world
@@ -166,7 +171,7 @@
                         </p>
                     </div>
                     <div class=" col-md-12 text-center mt-5">
-                        <a href="#" class="third-color mt-3">
+                        <a href="#" class="read-more third-color mt-3">
                             Read More
                             <i class=" ms-2 bi bi-arrow-right third-color"></i>
                         </a>
@@ -209,6 +214,9 @@
       choose our school
      ========================================================================================================== -->
         <section class="choose-our-school position-relative py-100">
+            <div class="position-absolute bg-triangle-left">
+                <img src="images/bg-triangle-left.png" alt="">
+            </div>
             <div class="container">
                 <div class="row pb-40">
                     <div class="col-md-12">
@@ -232,7 +240,7 @@
                     </div>
                 </div>
                 <div class="row gx-0">
-                    <div class="col-md-6  ">
+                    <div class="col-md-6 z-index-10 ">
                         <div class="max-w" style="background-image: url('images/choose-1.png');">
 
                         </div>
@@ -257,6 +265,9 @@
         Back To School
     ========================================================================================================== -->
         <section class="Back-To-School  py-100 position-relative ">
+            <div class="position-absolute bg-triangle-right">
+                <img src="images/bg-triangle-right.png" alt="">
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -269,139 +280,107 @@
                             Stay Up To Date With News And Events
                         </p>
                     </div>
-                    <div class="col-md-6  ">
+                    <!-- <div class="col-md-6 pb-5 ">
                         <div class=" d-flex justify-content-end align-items-center h-100 pb-5">
                         </div>
-                    </div>
-                    <div class="col-12 ">
+                    </div> -->
+                    <div class="col-12 pt-5">
                         <div>
                             <div class="carousel-wrap">
                                 <div class="owl-carousel partners-carousel">
-                                    <div class="card" style="width: 15rem;">
+                                    <div class=" mx-auto card" style="width: 15rem;">
                                         <img src="images/News-And-Events-1.png" class="img-fluid card-img-top"
                                             alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title">On The Other Hand</h5>
-                                            <p class="card-text">The House of English board and staff believe in
+                                            <h5 class="card-title primary-color">On The Other Hand</h5>
+                                            <p class="card-text fifth-color">The House of English board and staff
+                                                believe in
                                                 educating youth who are academically, physically and socially</p>
-                                            <a href="#" class="third-color mt-3">
+                                            <a href="#" class="read-more fifth-color mt-3">
                                                 Read More
-                                                <i class=" ms-2 bi bi-arrow-right third-color"></i>
+                                                <i class="arrow-read-more ms-2 bi bi-arrow-right fifth-color"></i>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="card" style="width: 15rem;">
+                                    <div class="card mx-auto  " style="width: 15rem;">
                                         <img src="images/choose-1.png" class="img-fluid card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title">Denouncing Pleasure</h5>
-                                            <p class="card-text">The House of English board and staff believe in
+                                            <h5 class="card-title primary-color">Denouncing Pleasure</h5>
+                                            <p class="card-text fifth-color">The House of English board and staff
+                                                believe in
                                                 educating youth who are academically, physically and socially</p>
-                                            <a href="#" class="third-color mt-3">
+                                            <a href="#" class="read-more fifth-color mt-3">
                                                 Read More
-                                                <i class=" ms-2 bi bi-arrow-right third-color"></i>
+                                                <i class="arrow-read-more ms-2 bi bi-arrow-right fifth-color"></i>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="card" style="width: 15rem;">
+                                    <div class=" mx-auto card" style="width: 15rem;">
                                         <img src="images/News-And-Events-3.png" class="img-fluid card-img-top"
                                             alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title">Easy To Distinguish</h5>
-                                            <p class="card-text">The House of English board and staff believe in
+                                            <h5 class="card-title primary-color">Easy To Distinguish</h5>
+                                            <p class="card-text fifth-color">The House of English board and staff
+                                                believe in
                                                 educating youth who are academically, physically and socially</p>
-                                            <a href="#" class="third-color mt-3">
+                                            <a href="#" class="read-more fifth-color mt-3">
                                                 Read More
-                                                <i class=" ms-2 bi bi-arrow-right third-color"></i>
+                                                <i class="arrow-read-more ms-2 bi bi-arrow-right fifth-color"></i>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="card" style="width: 15rem;">
+                                    <div class=" mx-auto card" style="width: 15rem;">
                                         <img src="images/News-And-Events-1.png" class="img-fluid card-img-top"
                                             alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title">On The Other Hand</h5>
-                                            <p class="card-text">The House of English board and staff believe in
+                                            <h5 class="card-title primary-color">On The Other Hand</h5>
+                                            <p class="card-text fifth-color">The House of English board and staff
+                                                believe in
                                                 educating youth who are academically, physically and socially</p>
-                                            <a href="#" class="third-color mt-3">
+                                            <a href="#" class="read-more fifth-color mt-3">
                                                 Read More
-                                                <i class=" ms-2 bi bi-arrow-right third-color"></i>
+                                                <i class="arrow-read-more ms-2 bi bi-arrow-right fifth-color"></i>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="card" style="width: 15rem;">
+                                    <div class=" mx-auto card" style="width: 15rem;">
                                         <img src="images/choose-1.png" class="img-fluid card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title">Denouncing Pleasure</h5>
-                                            <p class="card-text">The House of English board and staff believe in
+                                            <h5 class="card-title primary-color">Denouncing Pleasure</h5>
+                                            <p class="card-text fifth-color">The House of English board and staff
+                                                believe in
                                                 educating youth who are academically, physically and socially</p>
-                                            <a href="#" class="third-color mt-3">
+                                            <a href="#" class="read-more fifth-color mt-3">
                                                 Read More
-                                                <i class=" ms-2 bi bi-arrow-right third-color"></i>
+                                                <i class="arrow-read-more ms-2 bi bi-arrow-right fifth-color"></i>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="card" style="width: 15rem;">
+                                    <div class=" mx-auto card" style="width: 15rem;">
                                         <img src="images/News-And-Events-3.png" class="img-fluid card-img-top"
                                             alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title">Easy To Distinguish</h5>
-                                            <p class="card-text">The House of English board and staff believe in
+                                            <h5 class="card-title primary-color">Easy To Distinguish</h5>
+                                            <p class="card-text fifth-color">The House of English board and staff
+                                                believe in
                                                 educating youth who are academically, physically and socially</p>
-                                            <a href="#" class="third-color mt-3">
+                                            <a href="#" class="read-more fifth-color mt-3">
                                                 Read More
-                                                <i class=" ms-2 bi bi-arrow-right third-color"></i>
+                                                <i class=" arrow-read-more ms-2 bi bi-arrow-right fifth-color"></i>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="card" style="width: 15rem;">
+                                    <div class=" mx-auto card" style="width: 15rem;">
                                         <img src="images/News-And-Events-3.png" class="img-fluid card-img-top"
                                             alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title">Easy To Distinguish</h5>
-                                            <p class="card-text">The House of English board and staff believe in
+                                            <h5 class="card-title primary-color">Easy To Distinguish</h5>
+                                            <p class="card-text fifth-color">The House of English board and staff
+                                                believe in
                                                 educating youth who are academically, physically and socially</p>
-                                            <a href="#" class="third-color mt-3">
+                                            <a href="#" class="read-more fifth-color mt-3">
                                                 Read More
-                                                <i class=" ms-2 bi bi-arrow-right third-color"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card" style="width: 15rem;">
-                                        <img src="images/News-And-Events-3.png" class="img-fluid card-img-top"
-                                            alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Easy To Distinguish</h5>
-                                            <p class="card-text">The House of English board and staff believe in
-                                                educating youth who are academically, physically and socially</p>
-                                            <a href="#" class="third-color mt-3">
-                                                Read More
-                                                <i class=" ms-2 bi bi-arrow-right third-color"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card" style="width: 15rem;">
-                                        <img src="images/News-And-Events-3.png" class="img-fluid card-img-top"
-                                            alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Easy To Distinguish</h5>
-                                            <p class="card-text">The House of English board and staff believe in
-                                                educating youth who are academically, physically and socially</p>
-                                            <a href="#" class="third-color mt-3">
-                                                Read More
-                                                <i class=" ms-2 bi bi-arrow-right third-color"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card" style="width: 15rem;">
-                                        <img src="images/News-And-Events-3.png" class="img-fluid card-img-top"
-                                            alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Easy To Distinguish</h5>
-                                            <p class="card-text">The House of English board and staff believe in
-                                                educating youth who are academically, physically and socially</p>
-                                            <a href="#" class="third-color mt-3">
-                                                Read More
-                                                <i class=" ms-2 bi bi-arrow-right third-color"></i>
+                                                <i class=" arrow-read-more ms-2 bi bi-arrow-right fifth-color"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -418,24 +397,26 @@
     ========================================================================================================== -->
     <footer class="p-5 bg-primary-color text-center text-light position-relative">
         <div class="container">
-            <div class="text-center">
-                <img src="images/logo-brand.png" class="brand-footer" alt="">
+            <div class=" logo-footer">
+                <a href="#">
+                    <img src="images/logo-brand.png" class=" img-fluid brand-footer" alt="brand-footer">
+                </a>
             </div>
             <div class="row mt-4 ">
                 <div class="col-sm-4">
                     <ul class="links-footer navbar-nav navbar-align-left mx-lg-auto">
                         <li class="nav-item">
-                            <a href="#home" class="nav-link">Home </a>
+                            <a href="#home" class="nav-link">About Us </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#about" class="nav-link">About</a>
+                            <a href="#about" class="nav-link">News & Events</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#about" class="nav-link">Schools</a>
+                            <a href="#about" class="nav-link">Contact Us</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-4   ">
+                <div class="col-sm-4 ">
                     <ul
                         class="navbar-md-nav social-icons-header mb-0 justify-content-between px-5 d-flex center-lg-flex   mt-lg-0">
                         <li class="nav-item">
@@ -448,17 +429,26 @@
                             <a href="https://freehtml5.co" class="nav-link"><i class="bi bi-instagram"></i></a>
                         </li>
                     </ul>
+                    <div class=" line d-flex justify-content-center align-items-center">
+                        <ul>
+
+                            <li class="nav-item">
+                                <div class="vertical-line mr-2">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-sm-4 ">
                     <ul class="links-footer nav navbar-nav navbar-align-left mx-lg-auto">
                         <li class="nav-item">
-                            <a href="#home" class="nav-link">Home </a>
+                            <a href="#home" class="nav-link">Gallery </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#about" class="nav-link">About</a>
+                            <a href="#about" class="nav-link">Sections</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#about" class="nav-link">Schools</a>
+                            <a href="#about" class="nav-link">Career</a>
                         </li>
                     </ul>
                 </div>

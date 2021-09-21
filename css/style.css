@@ -254,26 +254,42 @@ ul {
 
 /*************************** end of public styles ***************************/
 /*************************** start of navbar with offcanvas form styles ***************************/
+header {
+  margin-bottom: 71px;
+}
 
 @media (max-width: 991.98px) {
   .offcanvas-collapse {
     position: fixed;
-    top: 56px;
+    top: 79px;
     /* Height of navbar */
     bottom: 0;
     left: 100%;
     width: 100%;
     padding-right: 1rem;
     padding-left: 1rem;
+    padding-top: 30px;
     overflow-y: auto;
     visibility: hidden;
     background-color: #343a40;
     transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+    z-index: 999999;
   }
+
+  /* header .fixed{
+    position: fixed;
+    width: 100%;
+  } */
 
   .offcanvas-collapse.open {
     visibility: visible;
     transform: translateX(-100%);
+  }
+
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
   }
 }
 
@@ -287,11 +303,27 @@ ul {
   color: var(--third-color) !important;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--white);
+}
+
+header .navbar-brand {
+  width: 59px;
+}
+
+header .vertical-line,
+footer .vertical-line {
+  width: 1px;
+  height: 20px;
+  background-color: #FFFFFF;
+  margin-top: 14px;
+}
+
 /*************************** end of navbar with offcanvas form styles ***************************/
 
 
 /* ==========================================================================================================
-										banner
+banner
 ========================================================================================================== */
 .hero-img {
   width: 100%;
@@ -303,8 +335,9 @@ ul {
   position: relative;
   left: calc(-1 * (100vw - 100%) / 2);
 }
+
 /* ==========================================================================================================
-								grades
+grades
 ========================================================================================================== */
 .grades {
   background-position: center !important;
@@ -312,19 +345,35 @@ ul {
   background-size: cover !important;
 }
 
+.grades .triangles-pt-210 {
+  padding-top: 210px;
+
+}
+
 .grades .grades-img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   margin: auto;
 }
+
 .grades .triangle {
   width: 473px;
   height: 410px;
   margin: auto;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  position: relative;
 }
 
+.grades .triangle-bg {
+  width: 511px;
+  height: 443px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 30%;
+  z-index: -9;
+}
 
 /* ==========================================================================================================
 schools
@@ -333,7 +382,7 @@ schools
 .schools {
   width: 100%;
   position: absolute;
-  top: -131px;
+  top: -158px;
 }
 
 /* ==========================================================================================================
@@ -372,7 +421,12 @@ choose our school
   position: absolute;
   left: -24%;
   bottom: -16%;
-  z-index: 9999999;
+  z-index: 20;
+}
+
+.choose-our-school .bg-triangle-left {
+  top: 0;
+  left: -360px;
 }
 
 /* ==========================================================================================================
@@ -380,6 +434,11 @@ Back-To-School
 ========================================================================================================== */
 .Back-To-School {
   background-color: var(--bg-sections);
+}
+
+.Back-To-School .bg-triangle-right {
+  top: 0;
+  right: -310px;
 }
 
 .Back-To-School .card {
@@ -402,6 +461,7 @@ Back-To-School
 .carousel-wrap .owl-nav {
   text-align: end;
   margin-right: 90px;
+  margin-top: 40px;
   height: 0px;
 }
 
@@ -436,11 +496,11 @@ Back-To-School
 }
 
 .owl-dots button.owl-dot {
-  width: 15px;
-  height: 15px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
   display: inline-block;
-  background: #ccc;
+  background: #F2F2F2;
   margin: 0 3px;
 }
 
@@ -458,6 +518,37 @@ span {
   top: -5px;
 }
 
+.Back-To-School .card .card-body .card-title,
+.Back-To-School .card .card-body .read-more,
+.Back-To-School .card .card-body .arrow-read-more {
+  transition: all .3s;
+
+}
+
+.Back-To-School .card {
+  cursor: pointer;
+}
+
+.Back-To-School .card:hover .card-body .card-title,
+.Back-To-School .card:hover .card-body .read-more,
+.Back-To-School .card:hover .card-body .arrow-read-more {
+  color: var(--third-color);
+}
+
+.Back-To-School .card:hover .card-body .card-text {
+  color: var(--primary-color);
+}
+
+/* .center .card-body .card-title,
+.center .card-body .read-more,
+.center .card-body .arrow-read-more {
+  color: var(--third-color);
+}
+
+.center .card-body .card-text {
+  color: var(--primary-color);
+} */
+
 /* ==========================================================================================================
 home about
 ========================================================================================================== */
@@ -465,15 +556,18 @@ home about
   max-width: 600px;
 }
 
-
-
 /* ==========================================================================================================
-						footer
+footer
 ========================================================================================================== */
 
-.brand-footer {
-  max-width: 150px;
+footer .logo-footer {
+  width: 80px;
+  margin: 0 auto;
 }
+
+/* .brand-footer {
+  max-width: 150px;
+} */
 
 .links-footer li a {
   color: white;
@@ -482,4 +576,148 @@ home about
 footer .font-footer-copy {
   margin-top: 20px;
   font-size: 12px;
+}
+
+footer .line {
+  margin-right: 38px;
+}
+
+footer .vertical-line {
+  width: 1px;
+  height: 35px;
+  background-color: #FFFFFF;
+  margin-top: 14px;
+  margin-top: 29px;
+  opacity: 0.2;
+}
+
+/* ==========================================================================================================
+Media Query 
+========================================================================================================== */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .grades .triangle-bg {
+    left: 20%;
+  }
+
+  .choose-our-school .choose-desc {
+    height: auto;
+    right: -38px;
+    top: 404px;
+  }
+
+  .choose-our-school .pt-100 {
+    padding-top: 50px;
+  }
+
+  .choose-our-school .ps-135 {
+    padding-left: 20px;
+  }
+
+  .choose-our-school .choose-third {
+    max-width: 300px;
+    height: 290px;
+    border: 8px solid #F9F9F9;
+    position: absolute;
+    left: -33%;
+    bottom: -31%;
+    z-index: 9999999;
+  }
+
+  .choose-our-school .pe-15 {
+    padding-right: 8rem !important;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .h2 {
+    font-size: 40px !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .navbar-toggler-icon {
+    /* width: 60px; */
+    width: 40px;
+    height: 71px;
+  }
+
+  .grades .grades-img {
+    width: 100px;
+    height: 100px;
+
+  }
+
+  .schools {
+    top: -102px;
+  }
+
+  .grades .triangle-bg {
+    left: 10%;
+  }
+
+  .home-about p {
+    font-size: 11px;
+  }
+
+  .home-about .h2 {
+    font-size: 25px !important;
+  }
+
+  .choose-our-school .choose-desc {
+    top: 348px;
+  }
+
+  .choose-our-school .pe-15 {
+    padding-right: 5rem !important;
+    line-height: 2;
+  }
+
+  .h2 {
+    font-size: 25px !important;
+  }
+
+  p {
+    font-size: 11px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .grades .triangle {
+    width: 365px;
+    height: 410px;
+    margin: 105px auto -60px;
+  }
+
+  .grades .triangle-bg {
+    width: 314px;
+    height: 362px;
+    margin: auto;
+    position: absolute;
+    top: 78px;
+    left: 8%;
+    z-index: -9;
+  }
+
+  .choose-our-school .max-w {
+    margin-top: 360px;
+  }
+
+  .choose-our-school .z-index-10 {
+    z-index: 10;
+  }
+
+  .choose-our-school .choose-desc {
+    right: 0;
+  }
+
+  .carousel-wrap .owl-nav {
+    margin-top: 0px;
+    position: relative;
+    bottom: -64px;
+    left: -11%;
+  }
 }
